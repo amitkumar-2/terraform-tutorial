@@ -5,3 +5,7 @@ output "firstoutputblock" {
 output "secondoutputblock" {
     value =  "This is  second output block"
 }
+
+output "thirdoutputblock" {
+    value = "This iis third output block"
+}

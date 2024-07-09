@@ -1,9 +1,9 @@
 pipeline {
     agent any
-    environment {
-        AWS_ACCESS_KEY_ID = credentials('sam-jenkins-demo-credentials')
-        AWS_SECRET_ACCESS_KEY = credentials('sam-jenkins-demo-credentials')
-    }
+    // environment {
+    //     AWS_ACCESS_KEY_ID = credentials('sam-jenkins-demo-credentials')
+    //     AWS_SECRET_ACCESS_KEY = credentials('sam-jenkins-demo-credentials')
+    // }
     stages {
         stage("Install Terraform") {
             steps {

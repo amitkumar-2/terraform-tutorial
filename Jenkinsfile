@@ -21,6 +21,7 @@ pipeline {
         stage("Build") {
             steps {
                 dir('root')
+                sh "pwd"
                 sh "terraform init"
                 sh "terraform apply"
             }

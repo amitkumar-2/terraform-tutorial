@@ -20,6 +20,7 @@ pipeline {
         
         stage("Build") {
             steps {
+                dir('root')
                 sh "terraform init"
                 sh "terraform apply"
             }
